@@ -7,7 +7,7 @@ The model was trained on the CARLA image segmentation dataset, and can be found 
 
 
 ### Network Architecture
-The Architecture was based on the original Unet Paper which consists of a contracting path which downsamples the image size and a corresponding expanding path. You can see how the model was implemented by going through the repository or view the corresponding notebook in the repo.
+The Architecture was based on the original Unet Paper which consists of a contracting path which downsamples the image size and a corresponding expanding path. You can see how the model was implemented by going through the repository or view the corresponding [notebook](https://github.com/david-adewoyin/UNet/blob/main/unet.ipynb) in the repo.
 
  <img width="500" alt="unet" src="https://user-images.githubusercontent.com/57121852/196273918-208c1a81-4387-4a84-a174-cd5b2100a4a9.png">
 
