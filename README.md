@@ -1,15 +1,12 @@
 ## Implementation of UNet Image Segmentation using Tensorflow 
-
-The architecture was based on the original paper [U-Net:Convolutional Network for Biomedical Image Segmentation.](https://arxiv.org/abs/1505.04597)   
+The architecture is based on the original paper [U-Net:Convolutional Network for Biomedical Image Segmentation.](https://arxiv.org/abs/1505.04597).   
 
 ### Overview
-The model was trained on the CARLA image segmentation dataset, and can be found in the data folder.  
+The model was trained on the CARLA image segmentation dataset, and the training data can be found in the data folder. 
 
+>The Architecture is based on the original Unet Paper which consists of a contracting path which downsamples the image size and a corresponding  expanding path. An implementation of the model can be seen by going through the repository or by viewing the corresponding [notebook](https://github.com/david-adewoyin/UNet/blob/main/unet.ipynb) in the repo.  
 
-### Network Architecture
-The Architecture was based on the original Unet Paper which consists of a contracting path which downsamples the image size and a corresponding expanding path. You can see how the model was implemented by going through the repository or view the corresponding [notebook](https://github.com/david-adewoyin/UNet/blob/main/unet.ipynb) in the repo.
-
- <img width="500" alt="unet" src="https://user-images.githubusercontent.com/57121852/196273918-208c1a81-4387-4a84-a174-cd5b2100a4a9.png">
+![prediction](https://user-images.githubusercontent.com/57121852/199120460-8f8324b3-7929-48ea-95d0-4b7a733c231a.png)
 
 
 ### Quick start
@@ -19,7 +16,7 @@ pip install -r requirements.txt
 ```
 
 ### Training
-You can try the model on your custom data by coping it into the data folder or changing the path in  ```train.py``` 
+You can train the model on your custom data by coping it into the data folder or changing the path in  ```train.py``` file. 
 ```
 > python train.py --help
 
@@ -45,7 +42,7 @@ optional arguments:
   -f LOAD, --load LOAD  Load a model weight from file
 ```
 ### Prediction
-After training your model and saving it to the `checkpoint`, you can easily test the output mask on your images via the CLI
+After training your model and saving it to the `checkpoint`, you can easily test the prediction on your images via the CLI.Note that the program will halt if it's unable to load model data from checkpoint.
 
 To predict a single image and save it:
 ```
